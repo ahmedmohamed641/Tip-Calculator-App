@@ -2,13 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
 :root {
      --color-light-blue: #86b5f9;
     --color-dark-blue: #1747a3;
     --color-white: #ffffff;
-  }
+}
 
 body {
     background-color: var(--color-light-blue);
@@ -20,7 +20,7 @@ body {
     margin: 0 auto;
     width: 100vw;
     height: 100vh;
-    }  
+}  
 
 main {
     background-color: var(--color-white);
@@ -33,17 +33,17 @@ main {
     align-items: center;
     margin: 2rem;
     padding: 4rem;
-    }
+}
 
-    .main-container {
-        width: 100%;
-    }
+.main-container {
+    width: 100%;
+}
 
 .input-group {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    }
+}
 
 label {
     color: black;
@@ -67,7 +67,7 @@ input::placeholder {
 }
 
 #people-id {
- margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .result-container {
