@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator App</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="javascript/index.js" defer> </script>
+</head>
+
+    <body>
+
+        <main>
+
+            <section class="main-container">
+
+                <section class="input-group">
+                    <label for="bill-id">Bill</label>
+                    <input type="number" name="bill" id="bill-id" placeholder="Enter Amount">
+                </section>
+
+                <section class="input-group">
+                    <label for="tip-id">Tip %</label>
+                    <input type="number" name="tip" id="tip-id" placeholder="Enter Percentage">
+                </section>
+
+                <section class="input-group">
+                    <label for="people-id">Split Between</label>
+                    <input type="number" name="people" id="people-id" placeholder="Enter number of people">
+                </section>
+
+            </section>
+
+            <section class="result-container">
+
+                <span>
+                    <h2>Tip Amount</h2>
+                    <p  class="results-text"  id="tip-amount-result-id">0</p>
+                </span>
+                <p class="sub-text">per person</p>
+
+                <span>
+                    <h2>Total</h2>
+                    <p class="results-text"  id="total-amount-result-id">0</p>
+                </span>
+
+                <button id="reset-btn-id">RESET</button>
+
+            </section>
+            
+        </main>
+        
+    </body>
+    
+</html>
