@@ -1,3 +1,10 @@
+/*
+  - Overall good progress
+  - Few minor issues
+  - Name the functions meaningfully 
+  - Use constants those variables are not chagning 
+*/
+
 const billInput = document.getElementById("bill-id");
 const tipInput = document.getElementById("tip-id");
 const peopleInput = document.getElementById("people-id");
@@ -18,7 +25,10 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
+// this name doesn't follow clean code practices, what it stands for??
+// e.g. call it `calculateTip()`
 function cal() {
+  // this all should const
   let billAmount = billInput.value;
   let tipAmount = tipInput.value / 100;
   let tipTotal = billAmount * tipAmount;
