@@ -14,15 +14,19 @@ resetbtn.addEventListener("click", () => {
 
 window.addEventListener("keydown", (e) => {
   if (e.keyCode === 13) {
-    cal();
+    calculate();
   }
 });
 
-function cal() {
-  let billAmount = billInput.value;
-  let tipAmount = tipInput.value / 100;
-  let tipTotal = billAmount * tipAmount;
-  let totalPerPeople = tipTotal / peopleInput.value;
+function calculate() {
+  if(peopleInput.value === "" || tipInput.value === "" || billInput.value === "" ) {
+    return
+  } 
+  
+  const billAmount = billInput.value;
+  const tipAmount = tipInput.value / 100;
+  const tipTotal = billAmount * tipAmount;
+  const totalPerPeople = tipTotal / peopleInput.value;
   totalResultText.innerHTML = `${tipTotal.toFixed(1)}`;
   tipResultText.innerHTML = `${totalPerPeople.toFixed(1)}`;
 }
