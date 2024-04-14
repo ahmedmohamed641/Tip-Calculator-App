@@ -22,7 +22,6 @@ function calculate() {
   if(peopleInput.value === "" || tipInput.value === "" || billInput.value === "" ) {
     return
   } 
-  
   const billAmount = billInput.value;
   const tipAmount = tipInput.value / 100;
   const tipTotal = billAmount * tipAmount;
